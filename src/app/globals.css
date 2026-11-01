@@ -1,0 +1,319 @@
+@import "tailwindcss";
+
+/*
+ * Token desain dipindahkan dari `tailwind.config` di code.html.
+ * Tailwind v4 memakai konfigurasi berbasis CSS (@theme), bukan tailwind.config.js.
+ */
+@theme {
+  /* colors */
+  --color-on-tertiary-container: #cdd5ef;
+  --color-on-secondary: #ffffff;
+  --color-on-secondary-fixed: #2a1700;
+  --color-surface-bright: #f8f9ff;
+  --color-on-tertiary: #ffffff;
+  --color-surface-container-high: #dce9ff;
+  --color-surface-container: #e5eeff;
+  --color-secondary: #855300;
+  --color-on-primary-fixed: #001551;
+  --color-secondary-container: #fea619;
+  --color-error: #ba1a1a;
+  --color-on-error-container: #93000a;
+  --color-tertiary-fixed: #dae2fd;
+  --color-on-tertiary-fixed-variant: #3f465c;
+  --color-secondary-fixed-dim: #ffb95f;
+  --color-surface-variant: #d3e4fe;
+  --color-outline: #747686;
+  --color-primary-container: #1d4ed8;
+  --color-inverse-on-surface: #eaf1ff;
+  --color-primary-fixed: #dce1ff;
+  --color-on-error: #ffffff;
+  --color-on-tertiary-fixed: #131b2e;
+  --color-secondary-fixed: #ffddb8;
+  --color-primary-fixed-dim: #b7c4ff;
+  --color-surface-dim: #cbdbf5;
+  --color-surface-container-highest: #d3e4fe;
+  --color-on-secondary-container: #684000;
+  --color-background: #f8f9ff;
+  --color-outline-variant: #c4c5d7;
+  --color-error-container: #ffdad6;
+  --color-on-primary-fixed-variant: #0039b5;
+  --color-surface-container-lowest: #ffffff;
+  --color-inverse-surface: #213145;
+  --color-surface-tint: #2151da;
+  --color-on-primary-container: #cad3ff;
+  --color-tertiary-fixed-dim: #bec6e0;
+  --color-surface: #f8f9ff;
+  --color-inverse-primary: #b7c4ff;
+  --color-tertiary: #3d445a;
+  --color-tertiary-container: #545c72;
+  --color-on-primary: #ffffff;
+  --color-on-background: #0b1c30;
+  --color-on-surface: #0b1c30;
+  --color-primary: #0037b0;
+  --color-on-surface-variant: #434655;
+  --color-surface-container-low: #eff4ff;
+  --color-on-secondary-fixed-variant: #653e00;
+
+  /* borderRadius */
+  --radius: 0.125rem;
+  --radius-lg: 0.25rem;
+  --radius-xl: 0.5rem;
+  --radius-full: 0.75rem;
+
+  /* spacing */
+  --spacing-margin-mobile: 1rem;
+  --spacing-gutter-mobile: 1rem;
+  --spacing-margin: 2rem;
+  --spacing-space-xl: 2.5rem;
+  --spacing-space-xs: 0.25rem;
+  --spacing-space-sm: 0.5rem;
+  --spacing-gutter: 1.5rem;
+  --spacing-space-md: 1rem;
+  --spacing-space-lg: 1.5rem;
+
+  /* fontSize */
+  --text-label-sm: 11px;
+  --text-label-sm--line-height: 16px;
+  --text-label-sm--letter-spacing: 0.04em;
+  --text-label-sm--font-weight: 700;
+  --text-headline-lg-mobile: 26px;
+  --text-headline-lg-mobile--line-height: 34px;
+  --text-headline-lg-mobile--letter-spacing: -0.015em;
+  --text-headline-lg-mobile--font-weight: 700;
+  --text-headline-lg: 36px;
+  --text-headline-lg--line-height: 44px;
+  --text-headline-lg--letter-spacing: -0.025em;
+  --text-headline-lg--font-weight: 700;
+  --text-headline-md: 24px;
+  --text-headline-md--line-height: 32px;
+  --text-headline-md--letter-spacing: -0.02em;
+  --text-headline-md--font-weight: 700;
+  --text-display-hero: 48px;
+  --text-display-hero--line-height: 56px;
+  --text-display-hero--letter-spacing: -0.03em;
+  --text-display-hero--font-weight: 800;
+  --text-title-lg: 18px;
+  --text-title-lg--line-height: 26px;
+  --text-title-lg--letter-spacing: -0.01em;
+  --text-title-lg--font-weight: 600;
+  --text-display-hero-mobile: 32px;
+  --text-display-hero-mobile--line-height: 40px;
+  --text-display-hero-mobile--letter-spacing: -0.02em;
+  --text-display-hero-mobile--font-weight: 800;
+  --text-body-lg: 16px;
+  --text-body-lg--line-height: 26px;
+  --text-body-lg--font-weight: 400;
+  --text-body-md: 14px;
+  --text-body-md--line-height: 22px;
+  --text-body-md--font-weight: 400;
+  --text-headline-sm: 20px;
+  --text-headline-sm--line-height: 28px;
+  --text-headline-sm--letter-spacing: -0.01em;
+  --text-headline-sm--font-weight: 600;
+  --text-label-md: 13px;
+  --text-label-md--line-height: 18px;
+  --text-label-md--letter-spacing: 0.01em;
+  --text-label-md--font-weight: 600;
+  --text-caption: 12px;
+  --text-caption--line-height: 16px;
+  --text-caption--font-weight: 500;
+
+  /*
+   * ── Token tambahan (bukan dari code.html) ──────────────────────────────
+   * Untuk tampilan yang lebih lapang: radius besar, bayangan lembut,
+   * section biru tua, dan skala tipografi yang lebih tegas.
+   */
+
+  /* Biru tua untuk Cara Kerja & footer. Kontras (WCAG):
+     putih 16.1:1, on-biru-tua-variant 10.2:1, on-biru-tua-redup 8.0:1 */
+  --color-biru-tua: #0b1d4f;
+  --color-on-biru-tua: #ffffff;
+  --color-on-biru-tua-variant: #c3cdee;
+  --color-on-biru-tua-redup: #a9b6de;
+
+  --radius-kartu: 1.25rem;
+  --radius-tombol: 0.75rem;
+  --radius-input: 0.625rem;
+  --radius-pil: 9999px;
+
+  /* Bayangan merujuk token warna, karena Tailwind menyalin nilai shadow ke utilitas;
+     mode gelap cukup menimpa warna bayangannya (jadi transparan). */
+  --shadow-kartu: 0 1px 2px var(--color-bayangan-halus), 0 8px 24px -10px var(--color-bayangan-biru);
+  --shadow-kartu-unggulan: 0 2px 4px var(--color-bayangan-halus-kuat), 0 20px 44px -16px var(--color-bayangan-biru-kuat);
+  --shadow-wa: 0 2px 4px var(--color-bayangan-wa-halus), 0 20px 44px -16px var(--color-bayangan-wa);
+
+  /* ── Token semantik (nilai terang = nilai lama, mode terang tidak berubah) ── */
+  --color-kartu: #ffffff;
+  --color-tombol-hover: #0037b0;
+  --color-on-aksen: #2a1700;
+  --color-aksen-pada-biru-tua: #ffddb8;
+  --color-navbar: #f8fafc;
+  --color-navbar-garis: #e2e8f0;
+  --color-pola-titik: rgb(255 255 255 / 0.08);
+  --color-placeholder: #9ca3af;
+  --color-bayangan-halus: rgb(11 28 48 / 0.04);
+  --color-bayangan-biru: rgb(0 55 176 / 0.12);
+  --color-bayangan-halus-kuat: rgb(11 28 48 / 0.05);
+  --color-bayangan-biru-kuat: rgb(0 55 176 / 0.28);
+
+  /* Kartu WhatsApp (section Kontak) */
+  --color-wa-latar: #0b3d2e;
+  --color-wa-hijau: #25d366;
+  --color-on-wa: #ffffff;
+  --color-wa-gelap: #0b3d2e;
+  --color-wa-tombol: #ffffff;
+  --color-wa-tombol-hover: #dcfce7;
+  --color-bayangan-wa-halus: rgb(11 61 46 / 0.12);
+  --color-bayangan-wa: rgb(11 61 46 / 0.55);
+
+  --text-display-hero-lg: 60px;
+  --text-display-hero-lg--line-height: 66px;
+  --text-display-hero-lg--letter-spacing: -0.035em;
+  --text-display-hero-lg--font-weight: 800;
+  --text-headline-xl: 44px;
+  --text-headline-xl--line-height: 52px;
+  --text-headline-xl--letter-spacing: -0.03em;
+  --text-headline-xl--font-weight: 700;
+  --text-body-isi: 15px;
+  --text-body-isi--line-height: 24px;
+  --text-body-isi--font-weight: 400;
+
+  /* Denyut pelan untuk titik status (hanya transform & opacity) */
+  --animate-denyut: denyut 2s cubic-bezier(0, 0, 0.2, 1) infinite;
+
+  @keyframes denyut {
+    75%,
+    100% {
+      transform: scale(2.4);
+      opacity: 0;
+    }
+  }
+}
+
+/* fontFamily — semuanya Plus Jakarta Sans (dimuat lewat next/font di layout.tsx) */
+@theme inline {
+  --font-sans: var(--font-plus-jakarta-sans), ui-sans-serif, system-ui, sans-serif;
+  --font-label-sm: var(--font-plus-jakarta-sans);
+  --font-headline-lg-mobile: var(--font-plus-jakarta-sans);
+  --font-headline-lg: var(--font-plus-jakarta-sans);
+  --font-headline-md: var(--font-plus-jakarta-sans);
+  --font-display-hero: var(--font-plus-jakarta-sans);
+  --font-title-lg: var(--font-plus-jakarta-sans);
+  --font-display-hero-mobile: var(--font-plus-jakarta-sans);
+  --font-body-lg: var(--font-plus-jakarta-sans);
+  --font-body-md: var(--font-plus-jakarta-sans);
+  --font-headline-sm: var(--font-plus-jakarta-sans);
+  --font-label-md: var(--font-plus-jakarta-sans);
+  --font-caption: var(--font-plus-jakarta-sans);
+  --font-display-hero-lg: var(--font-plus-jakarta-sans);
+  --font-headline-xl: var(--font-plus-jakarta-sans);
+  --font-body-isi: var(--font-plus-jakarta-sans);
+}
+
+@layer base {
+  html,
+  body {
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    overscroll-behavior: none;
+  }
+  main > :first-child {
+    margin-top: 0 !important;
+  }
+  main > :last-child {
+    margin-bottom: 0 !important;
+  }
+
+  /* Samakan beberapa default Tailwind v3 (dipakai code.html via CDN) */
+  input::placeholder,
+  textarea::placeholder {
+    color: var(--color-placeholder);
+  }
+  button:not(:disabled),
+  [role="button"]:not(:disabled) {
+    cursor: pointer;
+  }
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+/*
+ * ── Mode gelap ─────────────────────────────────────────────────────────────
+ * Atribut data-theme di <html> dipasang skrip inline (layout.tsx) sebelum render
+ * pertama: mengikuti prefers-color-scheme, atau pilihan di localStorage.
+ * Hanya nilai token yang ditimpa; komponen tidak menulis warna langsung.
+ * Kontras (WCAG AA) diperiksa: teks terendah ≥ 4.5:1.
+ */
+:root[data-theme="dark"] {
+  color-scheme: dark;
+
+  --color-background: #0a1226;
+  --color-surface: #0a1226;
+  --color-surface-bright: #0a1226;
+  --color-surface-dim: #070e1e;
+  --color-surface-container-lowest: #070e1e;
+  --color-surface-container-low: #0e1831;
+  --color-surface-container: #17244a;
+  --color-surface-container-high: #1d2c57;
+  --color-surface-container-highest: #24345f;
+  --color-surface-variant: #24345f;
+  --color-kartu: #111b35;
+
+  --color-on-background: #e3e9ff;
+  --color-on-surface: #e3e9ff;
+  --color-on-surface-variant: #a8b3d1;
+  --color-outline: #74809f;
+  --color-outline-variant: #3a4a75;
+
+  /* Biru lebih terang untuk teks, harga, tautan; tombol tetap biru solid */
+  --color-primary: #93b2ff;
+  --color-tombol-hover: #2f5fe6;
+
+  /* Aksen kuning: sorotan diredupkan agar tidak menyilaukan */
+  --color-secondary-fixed: #4a3209;
+  --color-on-secondary-fixed: #ffdcae;
+
+  /* Section biru tua (Cara Kerja & footer) dibuat lebih terang & jenuh
+     agar tetap terbedakan dari latar gelap di sekitarnya */
+  --color-biru-tua: #142f73;
+
+  --color-navbar: #0c1530;
+  --color-navbar-garis: #1f2b4d;
+  --color-placeholder: #8591b0;
+
+  /* Kartu memakai border tipis sebagai pengganti bayangan */
+  --color-bayangan-halus: transparent;
+  --color-bayangan-biru: transparent;
+  --color-bayangan-halus-kuat: transparent;
+  --color-bayangan-biru-kuat: transparent;
+  --color-bayangan-wa-halus: transparent;
+  --color-bayangan-wa: transparent;
+}
+
+/*
+ * Kartu "Notifikasi Faktur" yang mengambang.
+ * CSS @keyframes murni (berjalan di compositor), alternate tanpa jeda di ujung.
+ * Elemen ini tidak boleh memakai transform lain; fade-in ada di pembungkus luar.
+ */
+@keyframes mengambang {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-10px);
+  }
+}
+
+@utility animasi-mengambang {
+  animation: mengambang 3.5s ease-in-out infinite alternate;
+  will-change: transform;
+
+  @media (prefers-reduced-motion: reduce) {
+    animation: none;
+    will-change: auto;
+  }
+}
