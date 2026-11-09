@@ -55,9 +55,9 @@ export const site = {
 
   kontak: {
     // Nomor WhatsApp untuk tautan wa.me: format internasional tanpa "+" atau spasi.
-    whatsappNomor: "6281281187427",
+    whatsappNomor: "628131005647",
     // Nomor WhatsApp yang ditampilkan di halaman.
-    whatsappTampil: "+62 812-8118-7427",
+    whatsappTampil: "+62 813-1005-647",
     email: "info@intiaryatama.co.id", // TODO: GANTI DENGAN DATA ASLI SEBELUM TAYANG
     alamat: "Jl. Contoh No. 1, Jakarta Selatan", // TODO: GANTI DENGAN DATA ASLI SEBELUM TAYANG
     kota: "Jakarta Selatan, DKI Jakarta", // TODO: GANTI DENGAN DATA ASLI SEBELUM TAYANG
