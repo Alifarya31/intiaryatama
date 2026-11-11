@@ -21,11 +21,15 @@ export default function Footer() {
               {site.namaPerusahaan}
             </span>
           </div>
-          <p className="font-body-isi text-body-isi text-on-biru-tua-variant max-w-md">{footer.deskripsi}</p>
+          <p className="font-body-isi text-body-isi text-on-biru-tua-variant max-w-md">
+            {footer.deskripsi}
+          </p>
         </div>
 
         <div className="flex flex-col gap-2">
-          <span className="font-label-md text-label-md text-on-biru-tua mb-1">{footer.judulNavigasi}</span>
+          <span className="font-label-md text-label-md text-on-biru-tua mb-1">
+            {footer.judulNavigasi}
+          </span>
           {site.navigasi.map((item) => (
             <a
               key={item.href}
@@ -38,11 +42,15 @@ export default function Footer() {
         </div>
 
         <div className="flex flex-col gap-2">
-          <span className="font-label-md text-label-md text-on-biru-tua mb-1">{footer.judulLegal}</span>
-          <span className="font-body-isi text-body-isi text-on-biru-tua-variant">
-            {footer.labelNib} {kontak.nib}
+          <span className="font-label-md text-label-md text-on-biru-tua mb-1">
+            {footer.judulLegal}
           </span>
-          <span className="font-body-isi text-body-isi text-on-biru-tua-variant">{kontak.kota}</span>
+          {/* <span className="font-body-isi text-body-isi text-on-biru-tua-variant">
+            {footer.labelNib} {kontak.nib}
+          </span> */}
+          <span className="font-body-isi text-body-isi text-on-biru-tua-variant">
+            {kontak.kota}
+          </span>
           <a
             href={`mailto:${kontak.email}`}
             className="font-body-isi text-body-isi text-on-biru-tua-variant hover:text-on-biru-tua transition-colors duration-150 ease-out break-words"

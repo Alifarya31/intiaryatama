@@ -40,7 +40,8 @@ export const site = {
   tagline: "Software Agency & Solusi IT UMKM",
 
   seo: {
-    title: "PT Inti Aryatama Mandiri - Software Agency & Mitra Digitalisasi UMKM",
+    title:
+      "PT Inti Aryatama Mandiri - Software Agency & Mitra Digitalisasi UMKM",
     description:
       "Jasa pembuatan website, aplikasi mobile, dan software custom untuk UMKM dan perusahaan di Indonesia. Harga transparan, bergaransi, dan didampingi hingga siap pakai.",
     keywords: [
@@ -59,8 +60,8 @@ export const site = {
     // Nomor WhatsApp yang ditampilkan di halaman.
     whatsappTampil: "+62 813-1005-647",
     email: "info@intiaryatama.co.id", // TODO: GANTI DENGAN DATA ASLI SEBELUM TAYANG
-    alamat: "Jl. Contoh No. 1, Jakarta Selatan", // TODO: GANTI DENGAN DATA ASLI SEBELUM TAYANG
-    kota: "Jakarta Selatan, DKI Jakarta", // TODO: GANTI DENGAN DATA ASLI SEBELUM TAYANG
+    alamat: "Mahkota Indah Blok Gc 1 No 04", // TODO: GANTI DENGAN DATA ASLI SEBELUM TAYANG
+    kota: "Bekasi, Jawa Barat", // TODO: GANTI DENGAN DATA ASLI SEBELUM TAYANG
     nib: "0000000000000", // TODO: GANTI DENGAN DATA ASLI SEBELUM TAYANG
     // Jam layanan, ditampilkan apa adanya di kartu WhatsApp (tanpa awalan).
     jamLayanan: "Pesan dibalas di hari yang sama, Senin – Sabtu",
@@ -91,7 +92,10 @@ export const site = {
       "Kami membantu pemilik usaha di Indonesia beralih ke sistem digital tanpa ribet, tanpa istilah teknis yang membingungkan, dan bergaransi penuh hingga siap pakai.",
     tombolUtama: "Konsultasi Gratis Sekarang",
     tombolKedua: "Lihat Estimasi Biaya",
-    keunggulan: ["Transparan Tanpa Biaya Tersembunyi", "Pendampingan via WhatsApp"],
+    keunggulan: [
+      "Transparan Tanpa Biaya Tersembunyi",
+      "Pendampingan via WhatsApp",
+    ],
   },
 
   layanan: {
@@ -153,7 +157,7 @@ export const site = {
         jenis: "Website",
         cocokUntuk: "Pemula / Usaha Baru",
         nama: "Mulai Usaha",
-        harga: "Rp 2.500.000",
+        harga: "Rp 1.500.000",
         keterangan: "Biaya pengerjaan awal",
         fitur: [
           "1 Halaman Landing Page Cepat",
@@ -168,7 +172,7 @@ export const site = {
         jenis: "Website",
         cocokUntuk: "Perusahaan & Manufaktur",
         nama: "Profil Usaha",
-        harga: "Rp 5.000.000",
+        harga: "Rp 3.500.000",
         keterangan: "Situs korporat lengkap",
         fitur: [
           "Hingga 5 Halaman Konten Lengkap",
@@ -183,7 +187,7 @@ export const site = {
         jenis: "Website",
         cocokUntuk: "Retail, F&B, dan Grosir",
         nama: "Toko Online",
-        harga: "Rp 8.500.000",
+        harga: "Rp 7.500.000",
         keterangan: "Solusi transaksi mandiri",
         fitur: [
           "Katalog Produk Tanpa Batas",
@@ -200,7 +204,7 @@ export const site = {
         jenis: "Software Custom",
         cocokUntuk: "Berkembang & Multi-Cabang",
         nama: "Sistem Usaha (Custom)",
-        harga: "Rp 15.000.000",
+        harga: "Rp 12.000.000",
         keterangan: "Sesuai SOP bisnis Anda",
         fitur: [
           "Sistem Kasir & Inventori Gudang Terpadu",
@@ -268,7 +272,8 @@ export const site = {
   kontakSection: {
     badge: "Hubungi Kami",
     judul: "Konsultasikan Rencana Digital Usaha Anda Hari Ini",
-    deskripsi: "Ceritakan kebutuhan usaha Anda. Konsultasinya gratis dan tanpa kewajiban.",
+    deskripsi:
+      "Ceritakan kebutuhan usaha Anda. Konsultasinya gratis dan tanpa kewajiban.",
     kartuWhatsapp: {
       judul: "Chat langsung di WhatsApp",
       /** Ilustrasi percakapan (hiasan, tidak dibacakan pembaca layar). */
